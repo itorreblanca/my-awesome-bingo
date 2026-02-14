@@ -75,15 +75,15 @@ Auto-deploys to GitHub Pages on push to `main`. Vite base path: `process.env.VIT
 ## Using VS Code Copilot Features
 
 ### Checkpoints
-- **Purpose**: Revert unexpected changes during agent-driven development
+- **Purpose**: Revert unexpected changes during AI-assisted development with Copilot agents
 - **When to use**: After agent makes changes that don't match expectations or break functionality
-- **How**: In VS Code chat, use the Checkpoints feature to roll back to a previous state
+- **How**: Access via the chat panel's message history - click on a previous message to restore that state
 - **Best practice**: Commit working code often to create natural checkpoint boundaries
 
 ### Undo
 - **Purpose**: Quick rollback of the last agent action
 - **When to use**: Immediately after an agent makes an unwanted change
-- **How**: Use the Undo button in chat interface
+- **How**: Click the Undo button in the chat response header (appears after agent completes an action)
 - **Best practice**: Review agent changes before proceeding to next step
 
 ### Development Workflow with Checkpoints
