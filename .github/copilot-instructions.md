@@ -71,3 +71,24 @@ npm test            # Vitest tests
 ## Deployment
 
 Auto-deploys to GitHub Pages on push to `main`. Vite base path: `process.env.VITE_REPO_NAME ? '/${VITE_REPO_NAME}/' : '/'`
+
+## Using VS Code Copilot Features
+
+### Checkpoints
+- **Purpose**: Revert unexpected changes during AI-assisted development with Copilot agents
+- **When to use**: After agent makes changes that don't match expectations or break functionality
+- **How**: Access via the chat panel's message history - click on a previous message to restore that state
+- **Best practice**: Commit working code often to create natural checkpoint boundaries
+
+### Undo
+- **Purpose**: Quick rollback of the last agent action
+- **When to use**: Immediately after an agent makes an unwanted change
+- **How**: Click the Undo button in the chat response header (appears after agent completes an action)
+- **Best practice**: Review agent changes before proceeding to next step
+
+### Development Workflow with Checkpoints
+1. Make incremental changes with clear intents
+2. Test each change before proceeding
+3. Commit working code to create checkpoints
+4. If agent goes off-track, use Checkpoints to revert and retry with clearer prompt
+5. Keep browser open with live reload to catch visual regressions early
